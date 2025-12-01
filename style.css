@@ -1,0 +1,583 @@
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Raleway, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+main {
+    padding-top: 80px;
+}
+
+.logo {
+    margin-top: 5px;
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.2em;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.barre-de-navigation ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.barre-de-navigation a {
+    font-size: 0.85em;
+    font-weight: 500;
+    text-decoration: none;
+    color: #fff;
+}
+
+.barre-de-navigation a:hover {
+    color: #FFBF00;
+}
+
+/* SECTION : ACCUEIL */
+
+.hero-cinema {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 15px;
+    min-height: 90vh;
+    justify-content: center;
+}
+
+.hero-titre {
+    text-align: center;
+    padding: 30px 0;
+    order: 2;
+}
+
+.hero-titre h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 3.5em;
+    color: #fff;
+}
+
+.hero-titre h2 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.hero-media {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 350px;
+}
+
+.media-gauche {
+    order: 1;
+}
+
+.media-droite {
+    order: 3;
+}
+
+.media-item {
+    position: relative;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.7),
+        inset 0 0 10px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    /* TRÈS IMPORTANT */
+    border: 2px solid rgba(255, 255, 255, 0.1);
+
+    aspect-ratio: 16 / 9;
+}
+
+.media-item iframe,
+.media-item video,
+.media-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.media-item img {
+    object-fit: cover;
+    object-position: center 45%;
+}
+
+main section {
+    padding: 40px 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+main section h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #FFBF00;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 0.9em;
+}
+
+footer h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+/* SECTION : À PROPOS */
+
+
+.a-propos-contenu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.a-propos-bio {
+    text-align: center;
+}
+
+.a-propos-bio p {
+    margin-bottom: 15px;
+}
+
+.cta-bouton {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 15px;
+    background-color: transparent;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.cta-bouton:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* SECTION : MON PARCOURS */
+
+#a-propos h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    font-family: 'Homemade Apple', cursive;
+    color: #fff;
+}
+
+.timeline {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-left: 30px;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 10px;
+    width: 2px;
+    background-color: #fff;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -26px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #FFBF00;
+}
+
+.timeline-item h4 {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.timeline-item p {
+    font-size: 0.9em;
+    color: #ccc;
+}
+
+/* SECTION : PROJETS INTÉGRATION & UX */
+
+.projets-ux-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+}
+
+.carte-projet {
+    background-color: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.carte-projet h3 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2em;
+    color: #FFBF00;
+    margin-bottom: 15px;
+}
+
+.carte-projet p {
+    font-size: 0.9em;
+    color: #ccc;
+    line-height: 1.6;
+    flex-grow: 1;
+}
+
+.tags-competences {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+}
+
+.tags-competences li {
+    font-size: 0.8em;
+    background-color: rgba(255, 191, 0, 0.1);
+    color: #FFBF00;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+.carte-liens {
+    margin-top: auto;
+    /* Aligne les boutons en bas */
+}
+
+.carte-liens .cta-bouton {
+    margin-right: 10px;
+}
+
+/* SECTION : COURTS MÉTRAGES */
+
+.projets-film-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.projet-film {
+    background-color: #111;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.projet-film h3 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.projet-film img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.lien-affiche {
+    display: block;
+    overflow: hidden;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    /* Centrage */
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+
+.lien-affiche img {
+    margin-bottom: 0; 
+    display: block;
+    transition: transform 0.4s ease, opacity 0.3s ease;
+}
+
+.lien-affiche:hover img {
+    transform: scale(1.05);
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.projet-film p {
+    font-size: 0.9em;
+    color: #ccc;
+    text-align: left;
+    line-height: 1.5;
+}
+
+.projet-film {
+    display: flex;
+    flex-direction: column;
+}
+
+.projet-film .description-film {
+    flex-grow: 1;
+}
+
+.film-details {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 15px;
+    font-size: 0.85em;
+    color: #ccc;
+}
+
+.film-details li {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+}
+
+/* SECTION : PHOTOS */
+
+.gallery-project {
+    margin-bottom: 50px;
+}
+
+.gallery-title {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.gallery-grid-horizontal,
+.gallery-grid-mix {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.gallery-grid-duo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+}
+
+.grid-item img {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* SECTION : CONTACT */
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 0.9em;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+footer h2 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #FFBF00;
+}
+
+.contact-intro {
+    max-width: 500px;
+    margin: 0 auto 30px auto;
+    line-height: 1.7;
+}
+
+.contact-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
+}
+
+.contact-lien {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #fff;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.contact-lien:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+/* MEDIA QUERY */
+@media screen and (min-width: 768px) {
+
+    .barre-de-navigation a {
+        font-size: 1em;
+    }
+
+    .barre-de-navigation ul {
+        gap: 25px;
+    }
+
+    .hero-cinema {
+        display: grid;
+        grid-template-columns: 1fr 1.5fr 1fr;
+        align-items: center;
+        gap: 30px;
+        padding: 40px;
+    }
+
+    .hero-media,
+    .hero-titre {
+        order: 0;
+        max-width: 100%;
+    }
+
+    .hero-media {
+        flex-direction: column;
+        gap: 20px;
+        order: 0;
+        max-width: 350px;
+        justify-self: center;
+    }
+
+    .hero-titre h1 {
+        font-size: 5em;
+    }
+
+    .hero-titre h2 {
+        font-size: 1.5em;
+    }
+
+    .a-propos-contenu {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .a-propos-photo {
+        flex-basis: 33%;
+        display: flex;
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .a-propos-bio {
+        flex-basis: 67%;
+        text-align: left;
+    }
+
+    .projets-film-container {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
+
+    .projets-ux-container {
+        grid-template-columns: 1fr 1fr;
+        /* 2 colonnes */
+    }
+
+
+    .gallery-grid-horizontal {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery-grid-mix {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto auto;
+        grid-template-areas:
+            "main-img side-img-1"
+            "main-img side-img-2";
+    }
+
+    .gallery-grid-duo {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+    }
+
+    .gallery-grid-mix .item-1 {
+        grid-area: main-img;
+        min-height: 400px;
+    }
+
+    .gallery-grid-mix .item-2 {
+        grid-area: side-img-1;
+    }
+
+    .gallery-grid-mix .item-3 {
+        grid-area: side-img-2;
+    }
+
+}
