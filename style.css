@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 html {
     scroll-padding-top: 100px;
     scroll-behavior: smooth;
@@ -36,7 +38,7 @@ main {
 
 .logo {
     margin-top: 5px;
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2.2em;
 }
 
@@ -82,7 +84,7 @@ main {
 }
 
 .hero-titre h1 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 3.5em;
     color: #fff;
 }
@@ -143,7 +145,7 @@ main section {
 }
 
 main section h2 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2.5em;
     margin-bottom: 40px;
     text-align: center;
@@ -157,7 +159,7 @@ footer {
 }
 
 footer h2 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -205,7 +207,7 @@ footer h2 {
     font-size: 2em;
     margin-top: 60px;
     margin-bottom: 40px;
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     color: #fff;
 }
 
@@ -272,7 +274,7 @@ footer h2 {
 }
 
 .carte-projet h3 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2em;
     color: #FFBF00;
     margin-bottom: 15px;
@@ -331,7 +333,7 @@ footer h2 {
 }
 
 .projet-film h3 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2em;
     margin-bottom: 15px;
     color: #fff;
@@ -408,7 +410,7 @@ footer h2 {
 }
 
 .gallery-title {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2.2em;
     text-align: center;
     margin-bottom: 20px;
@@ -445,7 +447,7 @@ footer {
 }
 
 footer h2 {
-    font-family: 'Homemade Apple', cursive;
+    font-family: 'Lexend', cursive;
     font-size: 2.5em;
     margin-bottom: 20px;
     color: #FFBF00;
