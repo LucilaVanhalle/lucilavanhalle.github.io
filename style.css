@@ -170,8 +170,6 @@ footer h2 {
 /* SECTION : À PROPOS */
 
 .a-propos-contenu {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
@@ -182,10 +180,14 @@ footer h2 {
 
 .a-propos-bio p {
   margin-bottom: 15px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .cta-bouton {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
   padding: 12px 25px;
   margin-top: 15px;
   background-color: transparent;
