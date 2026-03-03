@@ -12,15 +12,34 @@
   </head>
 
   <body>
+    <a href="#accueil" class="skip-link">Aller au contenu principal</a>
     <header>
       <div class="logo"><a href="#accueil">Lu'</a></div>
       <nav class="barre-de-navigation">
         <ul>
-          <li><a href="#accueil">Accueil</a></li>
-          <li><a href="#a-propos">A propos</a></li>
-          <li><a href="#integration-ux">Intégration & UX</a></li>
-          <li><a href="#courts-metrages">Projets Visuels</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#accueil" aria-label="Retour à l'accueil">Accueil</a>
+          </li>
+          <li>
+            <a href="#a-propos" aria-label="Voir la section à propos"
+              >A propos</a
+            >
+          </li>
+          <li>
+            <a
+              href="#integration-ux"
+              aria-label="Voir les projets en intégration web et en UX/UI design"
+              >Intégration & UX/UI</a
+            >
+          </li>
+          <li>
+            <a href="#courts-metrages" aria-label="Voir les courts-métrages"
+              >Projets Visuels</a
+            >
+          </li>
+          <li>
+            <a href="#contact" aria-label="Me contacter">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -34,7 +53,7 @@
               width="560"
               height="315"
               src="https://www.youtube.com/embed/4vWrfQsmMls?si=L-2NzucFQi_wGsaE"
-              title="YouTube video player"
+              title="Court-métrage Egan"
               allow="
                 accelerometer;
                 autoplay;
@@ -55,7 +74,7 @@
               width="560"
               height="315"
               src="https://www.youtube.com/embed/xSixzioXOss?si=rv2x7nZ6UJUdsL9p"
-              title="YouTube video player"
+              title="Court-métrage La Nuit se lève"
               allow="
                 accelerometer;
                 autoplay;
@@ -76,7 +95,7 @@
               width="560"
               height="315"
               src="https://www.youtube.com/embed/i5JjgkEE5VU?si=OeFmAAyv-CGriMd0"
-              title="YouTube video player"
+              title="Court-métrage Ain't No Way"
               allow="
                 accelerometer;
                 autoplay;
@@ -183,13 +202,14 @@
               et conception de maquette sur Figma.
             </p>
             <ul class="tags-competences">
-              <li>UX Research</li>
-              <li>Wireframing</li>
+              <li lang="en">UX Research</li>
+              <li lang="en">Wireframing</li>
               <li>Figma</li>
             </ul>
             <div class="carte-liens">
               <a
                 href="maquette_finale_note_intention.pdf"
+                aria-label="Voir la maquette de la refonte de la mairie (en format PDF)"
                 class="cta-bouton"
                 target="_blank"
                 >Voir la maquette</a
@@ -231,10 +251,10 @@
             </p>
             <ul class="tags-competences">
               <li>PHP</li>
-              <li>MySQL</li>
+              <li lang="en">MySQL</li>
               <li>Architecture CRUD</li>
               <li>Sécurité</li>
-              <li>Docker</li>
+              <li lang="en">Docker</li>
             </ul>
             <div class="carte-liens">
               <a
@@ -247,16 +267,16 @@
           </article>
 
           <article class="carte-projet">
-            <h3>CineSwipe (En cours)</h3>
+            <h3 lang="en">CineSwipe (En cours)</h3>
             <p>
               Phase de conception de mon application mobile pour cinéphiles.
               L'étape de recherche (personae, wireframes) est presque terminée
               et sert de base au futur prototype React.
             </p>
             <ul class="tags-competences">
-              <li>UX Research</li>
+              <li lang="en">UX Research</li>
               <li>Personae</li>
-              <li>Wireframe</li>
+              <li lang="en">Wireframe</li>
             </ul>
             <div class="carte-liens">
               <a
@@ -274,16 +294,17 @@
         <h2>Courts Métrages</h2>
         <div class="projets-film-container">
           <article class="projet-film">
-            <h3>Egan</h3>
+            <h3 aria-label="Égane">Egan</h3>
             <a
               href="https://youtu.be/4vWrfQsmMls"
+              aria-label="Cliquer ici pour voir le court métrage Egan sur YouTube (nouvel onglet)"
               target="_blank"
               rel="noopener noreferrer"
               class="lien-affiche"
             >
               <img
                 src="photos_webp/affiche-egan.webp"
-                alt="Regarder le court métrage Egan sur YouTube"
+                alt="Affiche du film Egan (prononcé égane). Au centre, une photographie ancienne se consume lentement, encadrée par des flammes stylisées aux tons orange et jaune vifs. Le titre 'EGAN' s'affiche en grandes lettres blanches texturées avec un effet d'usure, évoquant une atmosphère dramatique et poétique."
             /></a>
 
             <p class="description-film">
@@ -298,16 +319,17 @@
           </article>
 
           <article class="projet-film">
-            <h3>Ain't No Way</h3>
+            <h3 lang="en">Ain't No Way</h3>
             <a
               href="https://youtu.be/lgWK-m9JfdA"
+              aria-label="Cliquer ici pour voir le court métrage Ain't No Way sur YouTube (nouvel onglet)"
               target="_blank"
               rel="noopener noreferrer"
               class="lien-affiche"
             >
               <img
                 src="photos_webp/affiche-aintnoway.webp"
-                alt="Regarder le court métrage Ain't No Way sur YouTube"
+                alt="Affiche illustrée du film Ain't No Way dans un style graphique coloré. On y voit une jeune femme joyeuse qui rit aux éclats près d'un réverbère parisien, ainsi que des scènes de quartier montrant une boucherie traditionnelle et la basilique du Sacré-Cœur en arrière-plan. L'ensemble dégage une ambiance rétro et dynamique des années 60."
             /></a>
             <p class="description-film">
               Paris, 1969. La simple quête d'Alice pour trouver le morceau de
@@ -325,13 +347,14 @@
             <h3>La Nuit se lève</h3>
             <a
               href="https://youtu.be/xSixzioXOss"
+              aria-label="Cliquer ici pour voir le court métrage La Nuit se lève sur YouTube (nouvel onglet)"
               target="_blank"
               rel="noopener noreferrer"
               class="lien-affiche"
             >
               <img
                 src="photos_webp/affiche-lanuitseleve.webp"
-                alt="Regarder le court métrage La Nuit se lève sur YouTube"
+                alt="Affiche du film La Nuit se lève. Une photographie nocturne montre deux jeunes femmes assises de dos sur les quais de Seine à Paris. Elles regardent l'eau où scintillent les reflets des lumières de la ville et des immeubles haussmanniens illuminés sur la rive opposée, créant une atmosphère intime et contemplative."
             /></a>
             <p class="description-film">
               Alors que la nuit tombe sur les quais de Paris, une conversation
@@ -355,17 +378,20 @@
             <div class="grid-item">
               <img
                 src="photos_webp/kyks.webp"
-                alt="Homme tenant un ballon de basket"
+                alt="Un jeune homme en tenue de sport (haut à manches longues vert sombre et short bleu clair) est en plein mouvement de dribble avec un ballon de basket multicolore sur un terrain extérieur bitumé et humide."
               />
             </div>
             <div class="grid-item">
               <img
                 src="photos_webp/duel.webp"
-                alt="Deux hommes se faisant face"
+                alt="Deux jeunes hommes se font face sur un terrain de basket en extérieur. L'un porte un tee-shirt jaune et l'autre un haut à manches longues vert sombre, créant une impression de défi sportif sous une lumière de fin de journée."
               />
             </div>
             <div class="grid-item">
-              <img src="photos_webp/duo.webp" alt="Deux hommes souriant" />
+              <img
+                src="photos_webp/duo.webp"
+                alt="Les deux mêmes sportifs sont photographiés de profil, marchant côte à côte sur le terrain. Ils sourient et semblent partager un moment de complicité après l'effort, un ballon de basket rebondissant au premier plan."
+              />
             </div>
           </div>
         </article>
@@ -376,17 +402,20 @@
             <div class="grid-item item-1">
               <img
                 src="photos_webp/laisse.webp"
-                alt="Chien en laisse dans la forêt"
+                alt="Un chien de type Husky à la robe rousse et blanche marche d'un pas décidé sur un sentier forestier couvert de feuilles mortes automnales, tenu par une laisse jaune fluorescente."
               />
             </div>
             <div class="grid-item item-2">
               <img
                 src="photos_webp/duel-chiens.webp"
-                alt="Deux chiens se faisant face"
+                alt="Gros plan sur deux chiens se faisant face truffe contre truffe en forêt. À gauche, un Husky aux tons clairs et à droite, un chien à la robe fauve et au museau noir, illustrant une interaction curieuse entre les deux animaux."
               />
             </div>
             <div class="grid-item item-3">
-              <img src="photos_webp/foret.webp" alt="Chien dans la forêt" />
+              <img
+                src="photos_webp/foret.webp"
+                alt="Plan large montrant un Husky roux et blanc explorant un sous-bois dense en automne. La perspective souligne la profondeur de la forêt et les couleurs chaudes des feuilles au sol."
+              />
             </div>
           </div>
         </article>
@@ -397,18 +426,18 @@
             <div class="grid-item item-1">
               <img
                 src="photos_webp/harmonie-florale.webp"
-                alt="Groupe avec couronnes de fleurs"
+                alt="Cinq personnes sont allongées en cercle dans l'herbe verte parsemée de pâquerettes. Leurs têtes se rejoignent au centre, chacune portant une couronne de fleurs aux tons pastels (rose, jaune, violet), créant une composition symétrique et printanière."
               />
             </div>
             <div class="grid-item item-2">
-              <img src="photos_webp/mariee.webp" alt="Mariée de dos" />
+              <img
+                src="photos_webp/mariee.webp"
+                alt="Vue de dos d'une mariée portant un voile blanc et une couronne de fleurs violettes et jaunes. Elle lève la main pour appliquer du rouge à lèvre, avec des arbres verdoyants en arrière-plan sous un ciel bleu."
+              />
             </div>
           </div>
         </article>
       </section>
-    </main>
-
-    <footer>
       <section id="contact">
         <h2>Contactez-moi</h2>
         <p class="contact-intro">
@@ -417,23 +446,31 @@
         </p>
 
         <div class="contact-links">
-          <a href="mailto:lucila.vanhalle@gmail.com" class="contact-lien"
+          <a
+            href="mailto:lucila.vanhalle@gmail.com"
+            title="S'ouvre dans un nouvel onglet"
+            class="contact-lien"
             >Email</a
           >
           <a
             href="https://www.linkedin.com/in/lucila-vanhalle-9571171b2/"
+            title="S'ouvre dans un nouvel onglet"
             class="contact-lien"
             target="_blank"
             >LinkedIn</a
           >
           <a
             href="https://github.com/LucilaVanhalle"
+            title="S'ouvre dans un nouvel onglet"
             class="contact-lien"
             target="_blank"
             >GitHub</a
           >
         </div>
       </section>
+    </main>
+
+    <footer>
       <p>&copy; 2026. Lucila Vanhalle. Tous droits réservés.</p>
     </footer>
   </body>
