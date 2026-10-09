@@ -15,7 +15,7 @@
 <body>
   <a href="#accueil" class="skip-link">Aller au contenu principal</a>
   <header>
-    <!--Régler le problème de navigation au clavier, pourquoi quand je clique sur tab ça ne veut pas se mettre sur les liens ?-->
+    <!--TODO : Régler le problème de navigation au clavier, pourquoi quand je clique sur tab ça ne veut pas se mettre sur les liens ?-->
     <div class="logo"><a href="#accueil">Lu'</a></div>
     <nav class="barre-de-navigation">
       <ul>
@@ -26,8 +26,8 @@
           <a href="#a-propos" aria-label="Voir la section à propos">A propos</a>
         </li>
         <li>
-          <a href="#integration-ux" aria-label="Voir les projets en intégration web et en UX/UI design">Intégration &
-            UX/UI</a>
+          <a href="#integration-ux" aria-label="Voir les projets en intégration web et en UX/UI design">Intégration et
+            UX/UI Design</a>
         </li>
         <li>
           <a href="#courts-metrages" aria-label="Voir les courts-métrages">Projets Visuels</a>
@@ -79,31 +79,35 @@
       <h2>À Propos de moi</h2>
       <div class="a-propos-contenu">
         <div class="a-propos-bio">
-          <!--Enlever les retours à la ligne car cela gêne le lecteur d'écran-->
           <p>
             Bonjour ! Moi, c'est Lucila (ou Lu'). j'ai toujours eu une façon
             un peu décalée de regarder le monde. Après avoir exploré la
             fiction en cinéma, j'ai décidé de passer de l'autre côté de
             l'écran pour améliorer le réel grâce à l'UX Design.
           </p>
-          <!--Mettre à jour le paragraphe -->
+
           <p>
             Ce qui m'anime ? La beauté utile. J'aime quand une interface est
-            aussi fluide qu'un bon travelling de cinéma. Actuellement en
-            formation d'Assistante intégrateur web au CNAM, je construis des
-            ponts entre ma sensibilité artistique et la logique du code.
-          </p>
-          <!--Idem-->
+            aussi fluide qu'un bon travelling de cinéma ; aussi mémorable qu'une bonne expérience en salle.</p>
+
+          <p>Actuellement en première année de Master Design d'Interface Multimédia et Internet (DIMI), j'apprends
+            l'importance du rôle de designer en tant qu'intermédiaire entre l'interface et l'utilisateur. C'est avant
+            tout veiller à ce que personne ne soit laissé de côté.</p>
+
           <p>
-            Dispo pour un café ou un visio ? Je cherche un stage en dev front
-            <strong>du 2 mars au 24 avril 2026.</strong> Promis, j'apporte ma
-            bonne humeur !
+            Dispo pour un café ou un visio ? Je cherche un stage en UX Design pour une durée de 6 mois.
+            Promis, j'apporte ma bonne humeur !
           </p>
         </div>
       </div>
       <h3>Mon Parcours académique</h3>
       <div class="timeline">
-        <!--Mettre à jour en ajoutant Master DIMI-->
+
+        <div class="timeline-item">
+          <h4>2026 - 2028 : Master Design d'Interface Multimédia et Internet</h4>
+          <p>Université Sorbonne Paris Nord</p>
+        </div>
+
         <div class="timeline-item">
           <h4>2025 - 2026 : DSP Assistant Intégrateur Web</h4>
           <p>CNAM Paris</p>
@@ -115,15 +119,13 @@
         </div>
 
         <div class="timeline-item">
-          <!--Enlever les & car lecteur d'écran lit et commercial au lieu de et-->
-          <h4>2020 - 2023 : Licence Cinéma & Audiovisuel</h4>
+          <h4>2020 - 2023 : Licence Cinéma et Audiovisuel</h4>
           <p>Université Sorbonne-Nouvelle - Paris 3</p>
           <p>Mention Bien</p>
         </div>
 
         <div class="timeline-item">
-          <!--Enlever la parenthèse car redondante-->
-          <h4>2019-2020 : Baccalauréat Littéraire (Bac L)</h4>
+          <h4>2019-2020 : Baccalauréat Littéraire</h4>
           <p>Lycée Marguerite Yourcenar, Morangis</p>
           <p>Mention Très Bien</p>
         </div>
@@ -131,7 +133,7 @@
     </section>
 
     <section id="integration-ux">
-      <h2>Projets Intégration & UX/UI Design</h2>
+      <h2>Projets Intégration et UX/UI Design</h2>
       <div class="projets-ux-container">
         <article class="carte-projet">
           <h3>Refonte du site web d'une mairie</h3>
@@ -144,17 +146,20 @@
             Méthodologie : création de personas ciblés et conception de
             maquette sur Figma.
           </p>
+
           <ul class="tags-competences">
             <li lang="en">UX Research</li>
             <li lang="en">Wireframing</li>
             <li>Figma</li>
           </ul>
+
           <div class="carte-liens">
-            <!--Préciser dans l'aria-label que cela ouvre un nouvel onglet-->
-            <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
+            <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="maquette_finale_note_intention.pdf"
-              aria-label="Voir la maquette de la refonte de la mairie (en format PDF)" class="cta-bouton"
-              target="_blank">Voir la maquette</a>
+              aria-label="Voir la maquette de la refonte de la mairie (nouvel onglet)" class="cta-bouton"
+              target="_blank">Voir la maquette
+              <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+            </a>
           </div>
         </article>
 
@@ -168,6 +173,7 @@
             données avec un tableau d'objets, implémentation d'algorithmes de
             recherche/tri et persistance via le localStorage.
           </p>
+
           <ul class="tags-competences">
             <li>HTML5</li>
             <li>CSS3</li>
@@ -175,10 +181,13 @@
             <li>Gestion des données</li>
             <li>Manipulation du DOM</li>
           </ul>
-          <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
+
           <div class="carte-liens">
+            <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="https://github.com/LucilaVanhalle/gestionnaire-de-livres" class="cta-bouton" target="_blank">Voir
-              le code source sur GitHub</a>
+              le code source sur GitHub
+              <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+            </a>
           </div>
         </article>
 
@@ -194,6 +203,7 @@
             développement back-end en PHP avec gestion de panier en session et
             sécurisation des requêtes SQL.
           </p>
+
           <ul class="tags-competences">
             <li>PHP</li>
             <li lang="en">MySQL</li>
@@ -201,16 +211,18 @@
             <li>Sécurité</li>
             <li lang="en">Docker</li>
           </ul>
-          <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
+
           <div class="carte-liens">
+            <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="https://github.com/LucilaVanhalle/boulangerie-du-village" class="cta-bouton" target="_blank">Voir
-              le code source sur GitHub</a>
+              le code source sur GitHub
+              <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+            </a>
           </div>
         </article>
 
         <article class="carte-projet">
-          <!--Enlever le changement de langue-->
-          <h3 lang="en">Site du festival DIRECTRICES</h3>
+          <h3>Site du festival DIRECTRICES</h3>
           <p>
             Mini-projet de branding et conception d'un prototype interactif
             sous Figma dans le cadre de mon cours de Design et de Graphisme
@@ -218,17 +230,25 @@
             Méthodologie : création d'une charte graphique, utilisation de
             l'Auto Layout et utilisation de composants pour l'interactivité.
           </p>
+
           <ul class="tags-competences">
             <li>Figma</li>
             <li lang="en">Auto Layout</li>
             <li lang="en">Branding</li>
           </ul>
-          <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
+
           <div class="carte-liens">
+            <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="VANHALLE_Lucila_Presentation.pdf" class="cta-bouton" target="_blank">Voir la présentation du
-              projet</a>
+              projet
+              <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+            </a>
+
+            <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="https://www.figma.com/proto/y7EplV27PQTWxMojG3DgGT/DIRECTRICES?content-scaling=fixed&kind=proto&node-id=1-3&page-id=0%3A1&scaling=scale-down&starting-point-node-id=74%3A78&t=sxfPbDiIJqM5Rg7r-1"
-              class="cta-bouton" target="_blank">Voir le prototype interactif sur Figma</a>
+              class="cta-bouton" target="_blank">Voir le prototype interactif sur Figma
+              <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+            </a>
           </div>
         </article>
       </div>
@@ -239,15 +259,17 @@
       <div class="projets-film-container">
         <article class="projet-film">
           <h3 aria-label="Égane">Egan</h3>
+
           <a href="https://youtu.be/4vWrfQsmMls"
             aria-label="Cliquer ici pour voir le court métrage Egan sur YouTube (nouvel onglet)" target="_blank"
             rel="noopener noreferrer" class="lien-affiche">
+
             <img src="photos_webp/affiche-egan.webp"
               alt="Affiche du court métrage Egan : une photographie ancienne se consume au centre, entourée de flammes stylisées orange et jaunes. Le titre « EGAN » apparaît en grandes lettres blanches à l'aspect usé." /></a>
-          <!--Enlever la parenthèse inutile-->
+
           <p class="description-film">
             Un homme solitaire reclus dans son appartement sombre tombe
-            éperdument amoureux d'une flamme... (etc)
+            éperdument amoureux d'une flamme...
           </p>
 
           <ul class="film-details">
@@ -258,36 +280,43 @@
 
         <article class="projet-film">
           <h3 lang="en">Ain't No Way</h3>
+
           <a href="https://youtu.be/lgWK-m9JfdA"
             aria-label="Cliquer ici pour voir le court métrage Ain't No Way sur YouTube (nouvel onglet)" target="_blank"
             rel="noopener noreferrer" class="lien-affiche">
+
             <img src="photos_webp/affiche-aintnoway.webp"
               alt="Affiche illustrée du court métrage Ain't No Way : une jeune femme rit aux éclats près d'un réverbère parisien. Une boucherie traditionnelle et la basilique du Sacré-Cœur apparaissent dans le décor, aux couleurs vives et au style rétro évoquant les années 60." /></a>
+
           <p class="description-film">
             Paris, 1969. La simple quête d'Alice pour trouver le morceau de
             viande parfait pour son dîner se transforme en une odyssée
             colorée...
           </p>
+
           <ul class="film-details">
             <li>Festival Objectif Censier 2023</li>
-            <li>🏆 Prix de l'affiche & Prix du public</li>
-            <!--Ecrire directrice de photographie sinon lecteur d'écran lit doppé...-->
-            <li>Rôles : Co-réalisatrice, DoP, Monteuse</li>
+            <li>Prix de l'affiche et Prix du public</li>
+            <li>Rôles : Co-réalisatrice, Directrice de la photographie, Monteuse</li>
           </ul>
         </article>
 
         <article class="projet-film">
           <h3>La Nuit se lève</h3>
+
           <a href="https://youtu.be/xSixzioXOss"
             aria-label="Cliquer ici pour voir le court métrage La Nuit se lève sur YouTube (nouvel onglet)"
             target="_blank" rel="noopener noreferrer" class="lien-affiche">
+
             <img src="photos_webp/affiche-lanuitseleve.webp"
               alt="Affiche du court métrage La Nuit se lève : deux jeunes femmes vues de dos sont assises sur les quais de Seine à Paris, face à l'eau. Les lumières de la ville se reflètent dans le fleuve, devant les immeubles haussmanniens de la rive opposée." /></a>
+
           <p class="description-film">
             Alors que la nuit tombe sur les quais de Paris, une conversation
             intime entre deux amies fait remonter à la surface des secrets et
             des émotions tues.
           </p>
+
           <ul class="film-details">
             <li>Projet universitaire (Thème : La Nuit)</li>
             <li>Rôle : Monteuse</li>
@@ -352,15 +381,20 @@
     <section id="contact">
       <h2>Contactez-moi</h2>
       <div class="contact-links">
-        <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
+        <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
         <a href="https://www.linkedin.com/in/lucila-vanhalle-9571171b2/" title="S'ouvre dans un nouvel onglet"
-          class="contact-lien" target="_blank">LinkedIn</a>
-        <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
+          class="contact-lien" target="_blank">LinkedIn
+          <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+        </a>
+
+        <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
         <a href="https://github.com/LucilaVanhalle" title="S'ouvre dans un nouvel onglet" class="contact-lien"
-          target="_blank">GitHub</a>
+          target="_blank">GitHub
+          <img src="photos_svg/icon_link.svg" alt="Icône de lien externe" class="icon-link" />
+        </a>
       </div>
     </section>
-    <!--Mettre un bouton pour revenir tout en haut de la page ?-->
+    <!--TODO Mettre un bouton pour revenir tout en haut de la page ?-->
   </main>
 
   <footer>
