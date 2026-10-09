@@ -15,6 +15,7 @@
 <body>
   <a href="#accueil" class="skip-link">Aller au contenu principal</a>
   <header>
+    <!--Régler le problème de navigation au clavier, pourquoi quand je clique sur tab ça ne veut pas se mettre sur les liens ?-->
     <div class="logo"><a href="#accueil">Lu'</a></div>
     <nav class="barre-de-navigation">
       <ul>
@@ -78,20 +79,21 @@
       <h2>À Propos de moi</h2>
       <div class="a-propos-contenu">
         <div class="a-propos-bio">
+          <!--Enlever les retours à la ligne car cela gêne le lecteur d'écran-->
           <p>
             Bonjour ! Moi, c'est Lucila (ou Lu'). j'ai toujours eu une façon
             un peu décalée de regarder le monde. Après avoir exploré la
             fiction en cinéma, j'ai décidé de passer de l'autre côté de
             l'écran pour améliorer le réel grâce à l'UX Design.
           </p>
-
+          <!--Mettre à jour le paragraphe -->
           <p>
             Ce qui m'anime ? La beauté utile. J'aime quand une interface est
             aussi fluide qu'un bon travelling de cinéma. Actuellement en
             formation d'Assistante intégrateur web au CNAM, je construis des
             ponts entre ma sensibilité artistique et la logique du code.
           </p>
-
+          <!--Idem-->
           <p>
             Dispo pour un café ou un visio ? Je cherche un stage en dev front
             <strong>du 2 mars au 24 avril 2026.</strong> Promis, j'apporte ma
@@ -101,6 +103,7 @@
       </div>
       <h3>Mon Parcours académique</h3>
       <div class="timeline">
+        <!--Mettre à jour en ajoutant Master DIMI-->
         <div class="timeline-item">
           <h4>2025 - 2026 : DSP Assistant Intégrateur Web</h4>
           <p>CNAM Paris</p>
@@ -112,12 +115,14 @@
         </div>
 
         <div class="timeline-item">
+          <!--Enlever les & car lecteur d'écran lit et commercial au lieu de et-->
           <h4>2020 - 2023 : Licence Cinéma & Audiovisuel</h4>
           <p>Université Sorbonne-Nouvelle - Paris 3</p>
           <p>Mention Bien</p>
         </div>
 
         <div class="timeline-item">
+          <!--Enlever la parenthèse car redondante-->
           <h4>2019-2020 : Baccalauréat Littéraire (Bac L)</h4>
           <p>Lycée Marguerite Yourcenar, Morangis</p>
           <p>Mention Très Bien</p>
@@ -145,6 +150,8 @@
             <li>Figma</li>
           </ul>
           <div class="carte-liens">
+            <!--Préciser dans l'aria-label que cela ouvre un nouvel onglet-->
+            <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
             <a href="maquette_finale_note_intention.pdf"
               aria-label="Voir la maquette de la refonte de la mairie (en format PDF)" class="cta-bouton"
               target="_blank">Voir la maquette</a>
@@ -168,6 +175,7 @@
             <li>Gestion des données</li>
             <li>Manipulation du DOM</li>
           </ul>
+          <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
           <div class="carte-liens">
             <a href="https://github.com/LucilaVanhalle/gestionnaire-de-livres" class="cta-bouton" target="_blank">Voir
               le code source sur GitHub</a>
@@ -193,6 +201,7 @@
             <li>Sécurité</li>
             <li lang="en">Docker</li>
           </ul>
+          <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
           <div class="carte-liens">
             <a href="https://github.com/LucilaVanhalle/boulangerie-du-village" class="cta-bouton" target="_blank">Voir
               le code source sur GitHub</a>
@@ -200,6 +209,7 @@
         </article>
 
         <article class="carte-projet">
+          <!--Enlever le changement de langue-->
           <h3 lang="en">Site du festival DIRECTRICES</h3>
           <p>
             Mini-projet de branding et conception d'un prototype interactif
@@ -213,6 +223,7 @@
             <li lang="en">Auto Layout</li>
             <li lang="en">Branding</li>
           </ul>
+          <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
           <div class="carte-liens">
             <a href="VANHALLE_Lucila_Presentation.pdf" class="cta-bouton" target="_blank">Voir la présentation du
               projet</a>
@@ -233,7 +244,7 @@
             rel="noopener noreferrer" class="lien-affiche">
             <img src="photos_webp/affiche-egan.webp"
               alt="Affiche du court métrage Egan : une photographie ancienne se consume au centre, entourée de flammes stylisées orange et jaunes. Le titre « EGAN » apparaît en grandes lettres blanches à l'aspect usé." /></a>
-
+          <!--Enlever la parenthèse inutile-->
           <p class="description-film">
             Un homme solitaire reclus dans son appartement sombre tombe
             éperdument amoureux d'une flamme... (etc)
@@ -260,6 +271,7 @@
           <ul class="film-details">
             <li>Festival Objectif Censier 2023</li>
             <li>🏆 Prix de l'affiche & Prix du public</li>
+            <!--Ecrire directrice de photographie sinon lecteur d'écran lit doppé...-->
             <li>Rôles : Co-réalisatrice, DoP, Monteuse</li>
           </ul>
         </article>
@@ -340,12 +352,15 @@
     <section id="contact">
       <h2>Contactez-moi</h2>
       <div class="contact-links">
+        <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
         <a href="https://www.linkedin.com/in/lucila-vanhalle-9571171b2/" title="S'ouvre dans un nouvel onglet"
           class="contact-lien" target="_blank">LinkedIn</a>
+        <!--Ajouter une icône pour indiquer que le lien s'ouvre dans un nouvel onglet-->
         <a href="https://github.com/LucilaVanhalle" title="S'ouvre dans un nouvel onglet" class="contact-lien"
           target="_blank">GitHub</a>
       </div>
     </section>
+    <!--Mettre un bouton pour revenir tout en haut de la page ?-->
   </main>
 
   <footer>
