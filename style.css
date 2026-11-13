@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-
 html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
@@ -15,7 +13,7 @@ body {
   background-color: #000000;
   background-image: url(black-paper.png);
   color: white;
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-size: 16px;
   line-height: 1.6;
 }
@@ -95,13 +93,13 @@ main {
 }
 
 .hero-titre h1 {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 3.5em;
   color: #fff;
 }
 
 .hero-titre h2 {
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-size: 1.2em;
   font-weight: 300;
 }
@@ -156,7 +154,7 @@ main section {
 }
 
 main section h2 {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 2.5em;
   margin-bottom: 40px;
   text-align: center;
@@ -170,7 +168,7 @@ footer {
 }
 
 footer h2 {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 2.5em;
   margin-bottom: 20px;
 }
@@ -203,7 +201,7 @@ footer h2 {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   transition:
     background-color 0.3s,
     color 0.3s;
@@ -221,7 +219,7 @@ footer h2 {
   font-size: 2em;
   margin-top: 60px;
   margin-bottom: 40px;
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   color: #fff;
 }
 
@@ -259,7 +257,7 @@ footer h2 {
 }
 
 .timeline-item h4 {
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-size: 1.2em;
   font-weight: bold;
   margin-bottom: 5px;
@@ -288,7 +286,7 @@ footer h2 {
 }
 
 .carte-projet h3 {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 2em;
   color: #ffbf00;
   margin-bottom: 15px;
@@ -315,7 +313,7 @@ footer h2 {
   color: #ffbf00;
   padding: 5px 10px;
   border-radius: 20px;
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-weight: 600;
 }
 
@@ -347,7 +345,7 @@ footer h2 {
 }
 
 .projet-film h3 {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 2em;
   margin-bottom: 15px;
   color: #fff;
@@ -415,7 +413,7 @@ footer h2 {
 }
 
 .film-details li {
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   font-weight: 600;
 }
 
@@ -426,7 +424,7 @@ footer h2 {
 }
 
 .gallery-title {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 2.2em;
   text-align: center;
   margin-bottom: 20px;
@@ -463,7 +461,7 @@ footer {
 }
 
 footer h2 {
-  font-family: "Lexend", cursive;
+  font-family: "Commissioner", cursive;
   font-size: 2.5em;
   margin-bottom: 20px;
   color: #ffbf00;
@@ -489,7 +487,7 @@ footer h2 {
   color: #fff;
   text-decoration: none;
   font-weight: bold;
-  font-family: "Lexend", sans-serif;
+  font-family: "Commissioner", sans-serif;
   transition:
     background-color 0.3s,
     color 0.3s;
