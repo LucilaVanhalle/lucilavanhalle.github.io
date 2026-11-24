@@ -1,6 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
 html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
+  font-size: 16px;
 }
 
 * {
@@ -9,12 +12,31 @@ html {
   box-sizing: border-box;
 }
 
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+}
+
+h4 {
+  font-size: 1rem;
+}
+
+p {
+  font-size: 1rem;
+}
+
 body {
   background-color: #000000;
   background-image: url(black-paper.png);
   color: white;
   font-family: "Commissioner", sans-serif;
-  font-size: 16px;
   line-height: 1.6;
 }
 
@@ -625,4 +647,101 @@ a:focus {
 
 .skip-link:focus {
   top: 0;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  margin-top: 25px;
+  gap: 60px
+}
+
+/* From Uiverse.io by javierBarroso */
+.card {
+  width: 280px;
+  background: #222222;
+  border-radius: 10px;
+  padding: 50px 30px;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+.icon,
+.heading,
+.content {
+  position: relative;
+  z-index: 5;
+  transition: all 0.5s;
+}
+
+.icon {
+  width: auto;
+  color: #ffbf00;
+  font-size: 3rem;
+}
+
+.heading {
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.number {
+  position: absolute;
+  top: -90px;
+  right: -85px;
+  padding: 80px 100px 30px 30px;
+  background: #ffbf00;
+  border-radius: 100%;
+  z-index: 5;
+}
+
+.number .text {
+  font-size: 28px;
+  font-weight: 600;
+  color: #000000;
+}
+
+.text {
+  margin-top: 20px;
+}
+
+.number::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: #ffbf00;
+  position: absolute;
+  border-radius: 100%;
+  top: 50%;
+  right: 50%;
+  transition: all 0.5s;
+  transform: translateX(50%) translateY(-50%);
+  z-index: -1;
+}
+
+.card:hover {
+  scale: 1.02;
+  box-shadow: 0 5px 20px #444e;
+}
+
+.card:hover .number::after {
+  width: 1400px;
+  height: 1400px;
+}
+
+.card:hover .icon,
+.card:hover .heading,
+.card:hover .content {
+  color: #000000;
+  fill: #000000;
+}
+
+main.case-study {
+  margin: 25px 50px;
 }
