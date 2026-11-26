@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Étude de cas UX de Lucila Vanhalle visant une refonte de la page d'accueil de MyAnimeList pour alléger l'interface et guider les nouveaux utilisateurs.">
     <title>Refonte MyAnimeList</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,9 +17,10 @@
 </head>
 
 <body>
+    <a href="#mainContent" class="skip-link">Aller au contenu principal</a>
     <header>
         <div class="logo"><a href="index.html#accueil">Lu'</a></div>
-        <nav class="barre-de-navigation">
+        <nav class="barre-de-navigation" aria-label="Navigation principale">
             <ul>
                 <li>
                     <a href="index.html#accueil" aria-label="Retour à l'accueil">Accueil</a>
@@ -26,12 +29,12 @@
                     <a href="index.html#a-propos" aria-label="Voir la section à propos">A propos</a>
                 </li>
                 <li>
-                    <a href="index.html#integration-ux"
-                        aria-label="Voir les projets en intégration web et en UX/UI design">Intégration et
-                        UX/UI Design</a>
+                    <a href="index.html#uxIntegration"
+                        aria-label="Voir les projets en UX/UI design et en intégration web">UX/UI Design et
+                        intégration web</a>
                 </li>
                 <li>
-                    <a href="index.html#courts-metrages" aria-label="Voir les courts-métrages">Projets Visuels</a>
+                    <a href="index.html#courts-metrages" aria-label="Voir les courts-métrages">Cinéma et photo</a>
                 </li>
                 <li>
                     <a href="index.html#contact" aria-label="Me contacter">Contact</a>
@@ -40,11 +43,11 @@
         </nav>
     </header>
 
-    <main class="case-study">
+    <main class="case-study" id="mainContent" tabindex="-1">
         <h1>MyAnimeList : Repenser la première impression</h1>
         <h2>Alléger l'interface pour guider les nouveaux utilisateurs</h2>
         <h3>Contexte du projet</h3>
-        <p> MyAnimeList est la plateforme de référence pour cataloguer ses animes et mangas avec plus de 13.4 millions
+        <p> MyAnimeList est la plateforme de référence pour cataloguer ses animes et mangas avec plus de 13,4 millions
             de
             visites mensuelles depuis les moteurs de recherche. <br> Elle permet aux utilisateurs de :</p>
         <ul>
@@ -53,7 +56,7 @@
             <li>partager leur passion avec d'autres utilisateurs</li>
         </ul>
         <p>MyAnimeList s'adresse à tous les passionnés d'anime et de manga, qu'ils soient débutants ou expérimentés.</p>
-        <h4>Pourquoi avoir choisi MyAnimeList pour ce projet?</h4>
+        <h4>Pourquoi avoir choisi MyAnimeList pour ce projet ?</h4>
         <p>Au collège, je me souviens de ma propre expérience en tant que nouvelle utilisatrice. L'interface me
             terrifiait. Je ne savais pas par où commencer ni où regarder. Je n'ai d'ailleurs pas tenu longtemps sur ce
             site. Et maintenant que je m'intéresse de plus près à l'UX (au point d'en faire mon futur métier), j'ai
@@ -90,10 +93,6 @@
                         <i class="fa-brands fa-sistrix" aria-hidden="true"></i>
                     </div>
                     <p class="heading">Analyser le site et identifier les points de douleur</p>
-                    <p class="content">
-                        Analyse comparative avec AniList pour identifier les points de douleur et les opportunités
-                        d'amélioration.
-                    </p>
                 </a>
                 <a href="#section3" class="card">
                     <div class="number">
@@ -104,11 +103,6 @@
                         <i class="fa-regular fa-user" aria-hidden="true"></i>
                     </div>
                     <p class="heading">Réaliser un persona et une Experience Map</p>
-                    <p class="content">
-                        Création du profil de Jade, collégienne de 14 ans qui découvre MyAnimeList pour la première fois
-                        et
-                        de sa carte d'expérience pour identifier les blocages dans son parcours.
-                    </p>
                 </a>
                 <a href="#section4" class="card">
                     <div class="number">
@@ -119,9 +113,6 @@
                         <i class="fa-regular fa-lightbulb" aria-hidden="true"></i>
                     </div>
                     <p class="heading">Concevoir un parcours utilisateur / étape idéation</p>
-                    <p class="content">
-                        Définition d'un user flow pour guider Jade dans l'ajout de son premier anime.
-                    </p>
                 </a>
                 <a href="#section5" class="card">
                     <div class="number">
@@ -132,16 +123,13 @@
                         <i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>
                     </div>
                     <p class="heading">Concevoir la maquette</p>
-                    <p class="content">
-                        Refonte de la page d'accueil sur Figma à l'aide de tous les éléments précédemment définis.
-                    </p>
                 </a>
             </div>
         </section>
 
         <!-- Section 2 : Analyser le site et identifier les points de douleur-->
         <section id="section2">
-            <h3> Analyser le site et identifier les points de douleur</h3>
+            <h3> 01 - Analyser le site et identifier les points de douleur</h3>
             <h4>Analyse comparative entre MyAnimeList et AniList</h4>
             <p>MyAnimeList permet aux passionnés comme aux débutants d'organiser leurs listes d'animes et de mangas, de
                 suivre leur progression et d'échanger avec la communauté. Avant d'analyser son interface, j'ai voulu
@@ -206,7 +194,7 @@
 
                     <div class="slider-box">
                         <img id="img-mal" src="photos_webp/accueil_mal.webp"
-                            alt="Haut de la page d'accueil actuelle de MyAnimeList">
+                            alt="Haut de la page d'accueil actuelle de MyAnimeList" loading="lazy">
                         <button type="button" id="next-mal" class="slider-btn btn-next"
                             aria-label="Voir la suite de la page MyAnimeList"><i class="fa-solid fa-arrow-right"
                                 aria-hidden="true"></i></button>
@@ -235,7 +223,7 @@
 
                     <div class="slider-box">
                         <img id="img-anilist" src="photos_webp/accueil_anilist.webp"
-                            alt="Haut de la page d'accueil d'AniList">
+                            alt="Haut de la page d'accueil d'AniList" loading="lazy">
                         <button type="button" id="next-anilist" class="slider-btn btn-next"
                             aria-label="Voir la suite de la page AniList"><i class="fa-solid fa-arrow-right"
                                 aria-hidden="true"></i></button>
@@ -271,9 +259,9 @@
                 les attentes des utilisateurs.</p>
         </section>
 
-        <!-- Section 3 : Réaliser un persona et une Experience Map>-->
+        <!-- Section 3 : Réaliser un persona et une Experience Map-->
         <section id="section3">
-            <h3>Réaliser un persona et une Experience Map</h3>
+            <h3>02 - Réaliser un persona et une Experience Map</h3>
             <p>Pour ancrer la refonte dans des besoins concrets, j'ai conçu le persona de Jade Lefebvre, une collégienne
                 débutante qui souhaite découvrir les animes pour partager cette passion avec son groupe d'amis. Ensuite,
                 j'ai cartographié sa toute première visite sur la plateforme.</p>
@@ -299,7 +287,7 @@
 
         <!-- Section 4 : Concevoir un parcours utilisateur / étape idéation-->
         <section id="section4">
-            <h3>Concevoir un parcours utilisateur / étape idéation</h3>
+            <h3>03 - Concevoir un parcours utilisateur / étape idéation</h3>
             <p>À partir des points de douleur identifiés sur l'<span lang="en">Experience Map</span> de Jade, j'ai tracé
                 un parcours permettant d'ajouter un premier anime à sa liste sans se sentir perdue.
                 L'interface s'adapte à deux manières de naviguer dès la page d'accueil. Elle peut soit découvrir une
@@ -316,7 +304,7 @@
 
         <!-- Section 5 : Concevoir la maquette-->
         <section id="section5">
-            <h3>Concevoir la maquette</h3>
+            <h3>04 - Concevoir la maquette</h3>
             <p>En passant sur Figma, j'ai gardé l'identité visuelle de MyAnimeList tout en repartant sur une grille de
                 douze colonnes pour mieux répartir l'espace.</p>
 
@@ -356,13 +344,16 @@
                 avant de se lancer dans la conception. Puisque nous, designers, créons des interfaces pour des
                 utilisateurs, il est essentiel de bien comprendre leurs besoins et leurs usages. La prochaine étape de
                 ce projet serait de faire des tests pour observer comment les utilisateurs interagissent avec
-                la nouvelle interface et si elle répond bien à leurs attentes.<br>De plus, dans un autre module intitulé
+                la nouvelle interface et si elle répond bien à leurs attentes.</p>
+            <p>De plus, dans un autre module intitulé
                 Recherche UX et SHS, j'apprends actuellement de nombreuses méthodes pour mener des recherches
                 utilisateurs efficaces (entretiens, questionnaires, observation, quand faire du quantitatif et du
                 qualitatif, etc.). J'ai hâte de pouvoir combiner toutes ces connaissances dans de futurs projets
                 concrets.
             </p>
         </section>
+        <a href="#mainContent" class="back-to-top" id="backToTop" aria-label="Retour en haut de la page"><i
+                class="fa-solid fa-arrow-up" aria-hidden="true"></i></a>
     </main>
 
     <footer>

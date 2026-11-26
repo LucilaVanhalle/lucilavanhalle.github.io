@@ -308,7 +308,7 @@ footer h2 {
   background-color: #111;
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 10px;
-  padding: 25px;
+  padding: 30px 25px;
   display: flex;
   flex-direction: column;
 }
@@ -323,9 +323,9 @@ footer h2 {
 .carte-projet p {
   font-size: 1em;
   color: #ccc;
-  line-height: 1.5;
+  line-height: 1.7;
   flex-grow: 1;
-  margin-bottom: 15px;
+  margin-bottom: 1.2rem;
 }
 
 .carte-liens {
@@ -810,6 +810,8 @@ main.case-study {
 .case-study ul,
 ol {
   list-style-position: inside;
+  margin-bottom: 2rem;
+  line-height: 1.8;
 }
 
 /* Graphique comparatif SEO en colonnes verticales */
@@ -1068,10 +1070,112 @@ ol {
   border-radius: 12px;
 }
 
+#img-refonte,
+.livrable-visuel .slider-box img {
+  max-width: 800px;
+  /* ou 750px / 850px */
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .livrable-visuel .slider-box {
   margin: 0;
 }
 
 .livrable-visuel .slider-box img {
   border-radius: 8px;
+}
+
+/* --- AÉRATION ET RYTHME DE LECTURE (ÉTUDE DE CAS) --- */
+
+/* 1. Largeur de lecture confortable pour le texte, pleine largeur pour les visuels */
+.case-study>h3,
+.case-study>h4,
+.case-study>p,
+.case-study>ul,
+.case-study>ol,
+.case-study>blockquote,
+.case-study section:not(.project-steps)>h3,
+.case-study section:not(.project-steps)>h4,
+.case-study section:not(.project-steps)>p,
+.case-study section:not(.project-steps)>ul,
+.case-study section:not(.project-steps)>ol {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 2. Respiration des paragraphes et listes */
+.case-study p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: #e4e4e7;
+  margin-bottom: 1.35rem;
+  max-width: 75ch;
+}
+
+.case-study>ul,
+.case-study>ol,
+.case-study section>ul,
+.case-study section>ol {
+  margin-bottom: 1.75rem;
+  padding-left: 1.2rem;
+  color: #e4e4e7;
+  line-height: 1.75;
+}
+
+.case-study li {
+  margin-bottom: 1rem;
+}
+
+/* 3. Hiérarchie et espace autour des titres (principe de proximité) */
+.case-study h3 {
+  font-size: 1.65rem;
+  color: #ffbf00;
+  margin-top: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.case-study h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin-top: 2.25rem;
+  margin-bottom: 0.85rem;
+}
+
+/* 4. Séparation visuelle entre chaque grande étape */
+.case-study section {
+  padding: 70px 0;
+}
+
+.case-study section h3:first-child {
+  margin-top: 0;
+}
+
+/* 5. Mise en valeur de la problématique */
+.problematique {
+  background-color: #141414;
+  border-left: 4px solid #ffbf00;
+  border-radius: 0 10px 10px 0;
+  padding: 20px 24px;
+  margin: 2.5rem auto;
+  font-size: 1.15rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: #ffffff;
+}
+
+/* 6. Un peu plus d'air autour des blocs visuels */
+.seo-chart,
+.comparatif,
+.livrable-visuel {
+  margin-top: 2.5rem;
+  margin-bottom: 3rem;
+}
+
+.cta-bouton.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
 }
