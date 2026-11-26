@@ -261,30 +261,107 @@
                 être sacrifiée pour autant. <br> Pour cette refonte, je me suis donc fixée 3 objectifs à prioriser :
             </p>
             <ol>
-                <li>Désencombrer la page d'accueil pour ne pas surcharger l'utilisateur</li>
-                <li>Hiérarchiser l'information pour plus de clarté et de lisibilité</li>
-                <li>Clarifier la navigation</li>
+                <li>Alléger l'interface</li>
+                <li>Faciliter la découverte</li>
+                <li>Améliorer la lisibilité</li>
             </ol>
 
-            <p>Avant de pouvoir envisager les améliorations, il est tout d'abord nécessaire de comprendre les besoins et
+            <p>Cependant, avant de pouvoir envisager des améliorations, il est tout d'abord nécessaire de comprendre les
+                besoins et
                 les attentes des utilisateurs.</p>
         </section>
 
         <!-- Section 3 : Réaliser un persona et une Experience Map>-->
         <section id="section3">
             <h3>Réaliser un persona et une Experience Map</h3>
+            <p>Pour ancrer la refonte dans des besoins concrets, j'ai conçu le persona de Jade Lefebvre, une collégienne
+                débutante qui souhaite découvrir les animes pour partager cette passion avec son groupe d'amis. Ensuite,
+                j'ai cartographié sa toute première visite sur la plateforme.</p>
+
+            <h4>Le persona : Jade Lefebvre</h4>
+            <figure class="livrable-visuel">
+                <img src="photos_webp/mal_persona.webp"
+                    alt="Fiche persona de Jade Lefebvre, 14 ans, collégienne en 3e. Histoire : passionnée de cinéma et de séries, elle veut se mettre aux animes comme son groupe d'amis. Verbatims : « Mon groupe est à fond anime/manga donc j'aimerai bien m'y mettre aussi » et « Je me décourage trop facilement à chaque fois. Je ne sais pas où regarder… ». Besoins : noter les animes à regarder, suivre sa progression, découvrir de nouveaux titres. Pain points : interface trop complexe et fatigante visuellement, manque d'attrait. Sites et apps préférés : Letterboxd, Instagram, TikTok, TV Time. Solutions identifiées : rendre l'interface très visuelle et claire, guider l'utilisateur."
+                    loading="lazy">
+                <figcaption>Persona de Jade Lefebvre : profil, besoins, points de douleur et pistes de solutions.
+                </figcaption>
+            </figure>
+
+            <h4>Experience Map de la première visite sur MyAnimeList</h4>
+            <figure class="livrable-visuel">
+                <img src="photos_webp/mal_experience_map.webp"
+                    alt="Experience Map du parcours de Jade Lefebvre lors de sa première visite sur MyAnimeList en 4 étapes : 1. Elle arrive sur la page d'accueil (désorientée face au trop-plein d'informations : « Par où je commence ? »). 2. Elle parcourt les rubriques et affiches (surchargée par la densité du contenu : « Il y a tellement de choses, je ne sais pas où regarder »). 3. Elle cherche à comprendre comment utiliser le site (confuse par l'absence de guidage : « Comment ça marche ? Comment je crée une liste ? »). 4. Elle finit par trouver un titre qui l'intéresse malgré les contenus noyés dans la masse (enthousiaste : « Oh ! Cet anime a l'air sympa ! »)."
+                    loading="lazy">
+                <figcaption>Cartographie des actions, problèmes rencontrés et courbe émotionnelle de Jade sur la page
+                    d'accueil actuelle.</figcaption>
+            </figure>
         </section>
+
         <!-- Section 4 : Concevoir un parcours utilisateur / étape idéation-->
         <section id="section4">
             <h3>Concevoir un parcours utilisateur / étape idéation</h3>
+            <p>À partir des points de douleur identifiés sur l'<span lang="en">Experience Map</span> de Jade, j'ai tracé
+                un parcours permettant d'ajouter un premier anime à sa liste sans se sentir perdue.
+                L'interface s'adapte à deux manières de naviguer dès la page d'accueil. Elle peut soit découvrir une
+                oeuvre visuellement en naviguant dans les sections de la page, soit rechercher directement un anime
+                grâce à la barre de recherche.</p>
+
+            <figure class="livrable-visuel">
+                <img src="photos_webp/mal_userflow.webp"
+                    alt="Diagramme du user flow montrant comment Jade ajoute un premier anime à sa liste sur MyAnimeList."
+                    loading="lazy">
+                <figcaption><span lang="en">User flow</span> : double parcours d'ajout d'un premier anime.</figcaption>
+            </figure>
         </section>
+
         <!-- Section 5 : Concevoir la maquette-->
         <section id="section5">
             <h3>Concevoir la maquette</h3>
+            <p>En passant sur Figma, j'ai gardé l'identité visuelle de MyAnimeList tout en repartant sur une grille de
+                douze colonnes pour mieux répartir l'espace.</p>
+
+            <p>Tout en haut, j'ai remonté la barre de recherche et déplacé le menu au-dessus de la publicité, avec des
+                petites flèches pour indiquer les sous-menus, afin que la navigation soit plus claire. J'ai aussi
+                remplacé les nombreuses pubs sur les côtés par une seule bannière pour que l'on se sente moins agressé
+                dès l'arrivée sur le site. Juste en dessous, j'ai ajouté un bloc d'accueil qui présente les
+                fonctionnalités principales avec un bouton <span lang="en">"Create my list"</span>.</p>
+
+            <p>Pour le reste de la page, j'ai agrandi les textes (16 px pour le corps et 24 px pour les titres), limité
+                chaque section à six affiches homogènes et transformé les articles de <span lang="en">news</span> et
+                <span lang="en">reviews</span> en cartes visuelles
+                plus aérées pour casser l'aspect trop textuel du site.
+            </p>
+
+            <figure class="livrable-visuel">
+                <div class="slider-box">
+                    <img id="img-refonte" src="photos_webp/mal_refonte1.webp"
+                        alt="Haut de la maquette de refonte de MyAnimeList avec la barre de recherche remontée, le menu simplifié, une bannière publicitaire unique et le bloc présentant les fonctionnalités."
+                        loading="lazy">
+                    <button type="button" id="next-refonte" class="slider-btn btn-next"
+                        aria-label="Voir la suite de la maquette de refonte"><i class="fa-solid fa-arrow-right"
+                            aria-hidden="true"></i></button>
+                    <button type="button" id="prev-refonte" class="slider-btn btn-prev"
+                        aria-label="Revenir à la partie précédente de la maquette"><i class="fa-solid fa-arrow-left"
+                            aria-hidden="true"></i></button>
+                </div>
+                <figcaption>Proposition de refonte de la page d'accueil réalisée sur Figma (3 vues)</figcaption>
+            </figure>
         </section>
+
         <!-- Section 6 : Ce que j'ai appris-->
         <section id="section6">
             <h3>Ce que j'ai appris</h3>
+            <p>C'était mon vrai premier projet complet d'UX Design ! Il m'a permis de comprendre qu'il ne faut pas se
+                précipiter sur Figma pour concevoir une solution mais plutôt prendre le temps de comprendre le problème
+                avant de se lancer dans la conception. Puisque nous, designers, créons des interfaces pour des
+                utilisateurs, il est essentiel de bien comprendre leurs besoins et leurs usages. La prochaine étape de
+                ce projet serait de faire des tests pour observer comment les utilisateurs interagissent avec
+                la nouvelle interface et si elle répond bien à leurs attentes.<br>De plus, dans un autre module intitulé
+                Recherche UX et SHS, j'apprends actuellement de nombreuses méthodes pour mener des recherches
+                utilisateurs efficaces (entretiens, questionnaires, observation, quand faire du quantitatif et du
+                qualitatif, etc.). J'ai hâte de pouvoir combiner toutes ces connaissances dans de futurs projets
+                concrets.
+            </p>
         </section>
     </main>
 

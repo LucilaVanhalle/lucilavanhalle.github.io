@@ -785,7 +785,9 @@ a.card .content {
 }
 
 main.case-study {
-  margin: 25px 120px;
+  padding: 100px 25px 40px 25px;
+  max-width: 1280px;
+  margin: 0 auto;
 }
 
 /* Titres principaux */
@@ -1028,4 +1030,48 @@ ol {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
   }
+}
+
+/* Conteneur des livrables visuels (Persona & Experience Map) */
+.livrable-visuel {
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 24px 0 40px;
+  text-align: center;
+}
+
+.livrable-visuel img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  display: block;
+}
+
+.livrable-visuel figcaption {
+  margin-top: 14px;
+  font-size: 0.9rem;
+  color: #a1a1aa;
+  font-style: italic;
+}
+
+.slider-refonte {
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+#img-refonte {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+}
+
+.livrable-visuel .slider-box {
+  margin: 0;
+}
+
+.livrable-visuel .slider-box img {
+  border-radius: 8px;
 }
