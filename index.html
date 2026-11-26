@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="fr">
 
-<!--TODO : Changer les tailles de police pour améliorer l'accessibilité, min 18px comme vu en cours-->
 <!--TODO : Essayer d'améliorer la perf du site / limiter le poids-->
-<!--TODO : Régler pb de petite icône lien ext-->
 
 <head>
   <meta charset="UTF-8" />
@@ -165,7 +163,7 @@
             <a href="maquette_finale_note_intention.pdf"
               aria-label="Voir la maquette de la refonte de la mairie (nouvel onglet)" class="cta-bouton"
               target="_blank">Voir la maquette
-              <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> </a>
           </div>
         </article>
 
@@ -192,7 +190,7 @@
             <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="https://github.com/LucilaVanhalle/gestionnaire-de-livres" class="cta-bouton" target="_blank">Voir
               le code source sur GitHub
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
           </div>
         </article>
@@ -222,7 +220,7 @@
             <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="https://github.com/LucilaVanhalle/boulangerie-du-village" class="cta-bouton" target="_blank">Voir
               le code source sur GitHub
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
           </div>
         </article>
@@ -247,13 +245,13 @@
             <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="VANHALLE_Lucila_Presentation.pdf" class="cta-bouton" target="_blank">Voir la présentation du
               projet
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
 
             <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
             <a href="https://www.figma.com/proto/y7EplV27PQTWxMojG3DgGT/DIRECTRICES?content-scaling=fixed&kind=proto&node-id=1-3&page-id=0%3A1&scaling=scale-down&starting-point-node-id=74%3A78&t=sxfPbDiIJqM5Rg7r-1"
               class="cta-bouton" target="_blank">Voir le prototype interactif sur Figma
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+              <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
             </a>
           </div>
         </article>
@@ -271,7 +269,8 @@
             rel="noopener noreferrer" class="lien-affiche">
 
             <img src="photos_webp/affiche-egan.webp"
-              alt="Affiche du court métrage Egan : une photographie ancienne se consume au centre, entourée de flammes stylisées orange et jaunes. Le titre « EGAN » apparaît en grandes lettres blanches à l'aspect usé." /></a>
+              alt="Affiche du court métrage Egan : une photographie ancienne se consume au centre, entourée de flammes stylisées orange et jaunes. Le titre « EGAN » apparaît en grandes lettres blanches à l'aspect usé."
+              loading="lazy" /></a>
 
           <p class="description-film">
             Un homme solitaire reclus dans son appartement sombre tombe
@@ -292,7 +291,8 @@
             rel="noopener noreferrer" class="lien-affiche">
 
             <img src="photos_webp/affiche-aintnoway.webp"
-              alt="Affiche illustrée du court métrage Ain't No Way : une jeune femme rit aux éclats près d'un réverbère parisien. Une boucherie traditionnelle et la basilique du Sacré-Cœur apparaissent dans le décor, aux couleurs vives et au style rétro évoquant les années 60." /></a>
+              alt="Affiche illustrée du court métrage Ain't No Way : une jeune femme rit aux éclats près d'un réverbère parisien. Une boucherie traditionnelle et la basilique du Sacré-Cœur apparaissent dans le décor, aux couleurs vives et au style rétro évoquant les années 60."
+              loading="lazy" /></a>
 
           <p class="description-film">
             Paris, 1969. La simple quête d'Alice pour trouver le morceau de
@@ -315,7 +315,8 @@
             target="_blank" rel="noopener noreferrer" class="lien-affiche">
 
             <img src="photos_webp/affiche-lanuitseleve.webp"
-              alt="Affiche du court métrage La Nuit se lève : deux jeunes femmes vues de dos sont assises sur les quais de Seine à Paris, face à l'eau. Les lumières de la ville se reflètent dans le fleuve, devant les immeubles haussmanniens de la rive opposée." /></a>
+              alt="Affiche du court métrage La Nuit se lève : deux jeunes femmes vues de dos sont assises sur les quais de Seine à Paris, face à l'eau. Les lumières de la ville se reflètent dans le fleuve, devant les immeubles haussmanniens de la rive opposée."
+              loading="lazy" /></a>
 
           <p class="description-film">
             Alors que la nuit tombe sur les quais de Paris, une conversation
@@ -339,15 +340,18 @@
         <div class="gallery-grid-horizontal">
           <div class="grid-item">
             <img src="photos_webp/kyks.webp"
-              alt="Un jeune homme en tenue de sport (haut à manches longues vert sombre et short bleu clair) est en plein mouvement de dribble avec un ballon de basket multicolore sur un terrain extérieur bitumé et humide." />
+              alt="Un jeune homme en tenue de sport (haut à manches longues vert sombre et short bleu clair) est en plein mouvement de dribble avec un ballon de basket multicolore sur un terrain extérieur bitumé et humide."
+              loading="lazy" />
           </div>
           <div class="grid-item">
             <img src="photos_webp/duel.webp"
-              alt="Deux jeunes hommes se font face sur un terrain de basket en extérieur. L'un porte un tee-shirt jaune et l'autre un haut à manches longues vert sombre, créant une impression de défi sportif sous une lumière de fin de journée." />
+              alt="Deux jeunes hommes se font face sur un terrain de basket en extérieur. L'un porte un tee-shirt jaune et l'autre un haut à manches longues vert sombre, créant une impression de défi sportif sous une lumière de fin de journée."
+              loading="lazy" />
           </div>
           <div class="grid-item">
             <img src="photos_webp/duo.webp"
-              alt="Les deux mêmes sportifs sont photographiés de profil, marchant côte à côte sur le terrain. Ils sourient et semblent partager un moment de complicité après l'effort, un ballon de basket rebondissant au premier plan." />
+              alt="Les deux mêmes sportifs sont photographiés de profil, marchant côte à côte sur le terrain. Ils sourient et semblent partager un moment de complicité après l'effort, un ballon de basket rebondissant au premier plan."
+              loading="lazy" />
           </div>
         </div>
       </article>
@@ -357,15 +361,18 @@
         <div class="gallery-grid-mix">
           <div class="grid-item item-1">
             <img src="photos_webp/laisse.webp"
-              alt="Un chien de type Husky à la robe rousse et blanche marche d'un pas décidé sur un sentier forestier couvert de feuilles mortes automnales, tenu par une laisse jaune fluorescente." />
+              alt="Un chien de type Husky à la robe rousse et blanche marche d'un pas décidé sur un sentier forestier couvert de feuilles mortes automnales, tenu par une laisse jaune fluorescente."
+              loading="lazy" />
           </div>
           <div class="grid-item item-2">
             <img src="photos_webp/duel-chiens.webp"
-              alt="Gros plan sur deux chiens se faisant face truffe contre truffe en forêt. À gauche, un Husky aux tons clairs et à droite, un chien à la robe fauve et au museau noir, illustrant une interaction curieuse entre les deux animaux." />
+              alt="Gros plan sur deux chiens se faisant face truffe contre truffe en forêt. À gauche, un Husky aux tons clairs et à droite, un chien à la robe fauve et au museau noir, illustrant une interaction curieuse entre les deux animaux."
+              loading="lazy" />
           </div>
           <div class="grid-item item-3">
             <img src="photos_webp/foret.webp"
-              alt="Plan large montrant un Husky roux et blanc explorant un sous-bois dense en automne. La perspective souligne la profondeur de la forêt et les couleurs chaudes des feuilles au sol." />
+              alt="Plan large montrant un Husky roux et blanc explorant un sous-bois dense en automne. La perspective souligne la profondeur de la forêt et les couleurs chaudes des feuilles au sol."
+              loading="lazy" />
           </div>
         </div>
       </article>
@@ -375,11 +382,13 @@
         <div class="gallery-grid-duo">
           <div class="grid-item item-1">
             <img src="photos_webp/harmonie-florale.webp"
-              alt="Cinq personnes sont allongées en cercle dans l'herbe verte parsemée de pâquerettes. Leurs têtes se rejoignent au centre, chacune portant une couronne de fleurs aux tons pastels (rose, jaune, violet), créant une composition symétrique et printanière." />
+              alt="Cinq personnes sont allongées en cercle dans l'herbe verte parsemée de pâquerettes. Leurs têtes se rejoignent au centre, chacune portant une couronne de fleurs aux tons pastels (rose, jaune, violet), créant une composition symétrique et printanière."
+              loading="lazy" />
           </div>
           <div class="grid-item item-2">
             <img src="photos_webp/mariee.webp"
-              alt="Vue de dos d'une mariée portant un voile blanc et une couronne de fleurs violettes et jaunes. Elle lève la main pour appliquer du rouge à lèvre, avec des arbres verdoyants en arrière-plan sous un ciel bleu." />
+              alt="Vue de dos d'une mariée portant un voile blanc et une couronne de fleurs violettes et jaunes. Elle lève la main pour appliquer du rouge à lèvre, avec des arbres verdoyants en arrière-plan sous un ciel bleu."
+              loading="lazy" />
           </div>
         </div>
       </article>
@@ -390,16 +399,17 @@
         <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
         <a href="https://www.linkedin.com/in/lucila-vanhalle-9571171b2/" title="S'ouvre dans un nouvel onglet"
           class="contact-lien" target="_blank">LinkedIn
-          <i class="fa-solid fa-arrow-up-right-from-square"></i> </a>
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> </a>
 
         <!--TODO : Faire en sorte de changer d'img pour l'icône selon état (survol ou non) car actuellement quand c'est survolé on ne voit pas vu qu'elle est blanche-->
         <a href="https://github.com/LucilaVanhalle" title="S'ouvre dans un nouvel onglet" class="contact-lien"
           target="_blank">GitHub
-          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+          <i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
         </a>
       </div>
     </section>
-    <!--TODO Mettre un bouton pour revenir tout en haut de la page ?-->
+    <a href="#accueil" class="back-to-top" aria-label="Retour en haut de la page"><i class="fa-solid fa-arrow-up"
+        aria-hidden="true"></i></a>
   </main>
 
   <footer>
