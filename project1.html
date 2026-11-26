@@ -40,19 +40,45 @@
     <main class="case-study">
         <h1>MyAnimeList : Repenser la première impression</h1>
         <h2>Alléger l'interface pour guider les nouveaux utilisateurs</h2>
-        <p> MyAnimeList est la plateforme de référence pour cataloguer ses animes et mangas avec plus de 3,7 millions de
-            visites mensuelles depuis les moteurs de recherche. J'avais déjà tenté d'utiliser le site au collège mais
-            son interface m'avait découragée. En y retournant des années plus tard dans le cadre de mon cours
+        <h3>Contexte du projet</h3>
+        <p> MyAnimeList est la plateforme de référence pour cataloguer ses animes et mangas avec plus de 13.4 millions
+            de
+            visites mensuelles depuis les moteurs de recherche. <br> Elle permet aux utilisateurs de :</p>
+        <ul>
+            <li>créer et organiser leurs listes</li>
+            <li>suivre leur progression dans le visionnage d'anime et la lecture de mangas</li>
+            <li>partager leur passion avec d'autres utilisateurs</li>
+        </ul>
+        <p>MyAnimeList s'adresse à tous les passionnés d'anime et de manga, qu'ils soient débutants ou expérimentés.</p>
+        <h4>Pourquoi avoir choisi MyAnimeList pour ce projet?</h4>
+        <p>Au collège, je me souviens de ma propre expérience en tant que nouvelle utilisatrice. L'interface me
+            terrifiait. Je ne savais pas par où commencer ni où regarder. Je n'ai d'ailleurs pas tenu longtemps sur ce
+            site. Et maintenant que je m'intéresse de plus près à l'UX (au point d'en faire mon futur métier), j'ai
+            choisi de travailler sur la page d'accueil de MyAnimeList dans le cadre de ce
+            projet de refonte. <br>
+            En y retournant des années plus tard dans le cadre de mon cours
             Introduction à l'UX en Master 1, j'ai constaté que rien n'avait changé depuis tout ce temps : toujours
             autant d'informations, toujours autant de publicités et aucun repère pour savoir par où commencer. J'ai donc
             voulu explorer comment une meilleure hiérarchie visuelle pouvait rendre ce premier contact plus accueillant
             sans perdre l'âme du site.</p>
 
+        <h4>Et pourquoi la page d'accueil ?</h4>
+        <p>La page d'accueil représente généralement le premier contact entre l'utilisateur et
+            l'interface, la porte d'entrée vers un service ou un produit. <br>
+            Elle a pour but de présenter son identité visuelle, donner un avant-goût de
+            l'expérience et présenter les fonctionnalités à l'utilisateur. <br>
+            Le guidage est donc une part extrêmement importante à prendre en compte lors de
+            la conception de la page d'accueil puisqu'il permet à l'utilisateur de se repérer, de
+            comprendre le fonctionnement de l'interface et les actions qu'il peut effectuer.</p>
+        <h4>Comment alléger la page d'accueil de MyAnimeList et mieux guider le regard pour aider un nouvel
+            utilisateur
+            à ajouter son premier anime sans se sentir dépassé ?</h4>
+
         <section class="project-steps">
             <h3>Les étapes du projet</h3>
             <!-- From Uiverse.io by javierBarroso -->
             <div class="cards">
-                <div class="card">
+                <a href="#section2" class="card">
                     <div class="number">
                         <p class="text">01</p>
                     </div>
@@ -65,8 +91,8 @@
                         Analyse comparative avec AniList pour identifier les points de douleur et les opportunités
                         d'amélioration.
                     </p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="#section3" class="card">
                     <div class="number">
                         <p class="text">02</p>
                     </div>
@@ -80,8 +106,8 @@
                         et
                         de sa carte d'expérience pour identifier les blocages dans son parcours.
                     </p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="#section4" class="card">
                     <div class="number">
                         <p class="text">03</p>
                     </div>
@@ -93,8 +119,8 @@
                     <p class="content">
                         Définition d'un user flow pour guider Jade dans l'ajout de son premier anime.
                     </p>
-                </div>
-                <div class="card">
+                </a>
+                <a href="#section5" class="card">
                     <div class="number">
                         <p class="text">04</p>
                     </div>
@@ -106,31 +132,157 @@
                     <p class="content">
                         Refonte de la page d'accueil sur Figma à l'aide de tous les éléments précédemment définis.
                     </p>
-                </div>
+                </a>
             </div>
         </section>
 
-        <!-- Section 1 : Le point de départ et contexte-->
-        <section>
-            <h3>Le point de départ</h3>
-            <p>En tant qu'étudiante qui découvre les fondamentaux de l'UX, j'ai appris que la page d'accueil est la
-                porte
-                d'entrée d'un site. Elle doit rassurer, montrer ce qu'on peut faire et guider le regard. Mon souvenir
-                d'adolescente face à MyAnimeList résumait exactement le problème inverse : entre les bannières
-                publicitaires
-                qui entourent l'écran et les textes écrits très petits (parfois 10px), on ne sait pas où poser les yeux
-                et
-                on finit par fermer l'onglet.</p>
-            <h4>Comment alléger la page d'accueil de MyAnimeList et mieux guider le regard pour aider un nouvel
-                utilisateur
-                à ajouter son premier anime sans se sentir dépassé ?</h4>
+        <!-- Section 2 : Analyser le site et identifier les points de douleur-->
+        <section id="section2">
+            <h3> Analyser le site et identifier les points de douleur</h3>
+            <h4>Analyse comparative entre MyAnimeList et AniList</h4>
+            <p>MyAnimeList permet aux passionnés comme aux débutants d'organiser leurs listes d'animes et de mangas, de
+                suivre leur progression et d'échanger avec la communauté. Avant d'analyser son interface, j'ai voulu
+                vérifier si sa densité visuelle était la norme sur ce marché en comparant son trafic mensuel issu des
+                moteurs de recherche à celui de ses principaux concurrents (Semrush, nov. 2026). Le constat est sans
+                appel, MyAnimeList domine largement le secteur avec 13,4 millions de visites mensuelles, loin devant
+                Anime-Planet (1,5 million), AniList (455 700) et MangaUpdates (391 300).
+            </p>
+            <div class="seo-chart">
+                <h4 class="chart-title">Trafic mensuel estimé sur les moteurs de recherche</h4>
+
+                <div class="chart-columns">
+                    <div class="chart-col">
+                        <div class="chart-bar-area">
+                            <div class="chart-bar bar-mal">
+                                <span class="chart-value">13,4 M</span>
+                            </div>
+                        </div>
+                        <span class="chart-label">MyAnimeList</span>
+                    </div>
+
+                    <div class="chart-col">
+                        <div class="chart-bar-area">
+                            <span class="chart-value-top">1,5 M</span>
+                            <div class="chart-bar bar-animeplanet"></div>
+                        </div>
+                        <span class="chart-label">Anime-Planet</span>
+                    </div>
+
+                    <div class="chart-col">
+                        <div class="chart-bar-area">
+                            <span class="chart-value-top">455,7 K</span>
+                            <div class="chart-bar bar-anilist"></div>
+                        </div>
+                        <span class="chart-label">AniList</span>
+                    </div>
+
+                    <div class="chart-col">
+                        <div class="chart-bar-area">
+                            <span class="chart-value-top">391,3 K</span>
+                            <div class="chart-bar bar-mangaupdates"></div>
+                        </div>
+                        <span class="chart-label">MangaUpdates</span>
+                    </div>
+                </div>
+
+                <p class="chart-source">
+                    Source : Analyse sur
+                    <a href="https://www.semrush.com/seo/32045876/?fid=14315684" target="_blank"
+                        rel="noopener noreferrer">Semrush</a>
+                    (nov. 2026)
+                </p>
+            </div>
+
+            <p>Pourtant, cette position de leader
+                contraste avec l'expérience proposée dès la page d'accueil. En mettant côte à côte
+                MyAnimeList et AniList, plusieurs points de douleur ressortent nettement :</p>
+            <div class="comparatif">
+                <!-- Carte 1 : MyAnimeList -->
+                <div class="comparatif-carte">
+                    <h4>Page d'accueil de MyAnimeList</h4>
+
+                    <div class="slider-box">
+                        <img id="img-mal" src="photos_webp/accueil_mal.webp"
+                            alt="Haut de la page d'accueil actuelle de MyAnimeList">
+                        <button type="button" id="next-mal" class="slider-btn btn-next"
+                            aria-label="Voir la suite de la page MyAnimeList"><i class="fa-solid fa-arrow-right"
+                                aria-hidden="true"></i></button>
+                        <button type="button" id="prev-mal" class="slider-btn btn-prev"
+                            aria-label="Revenir au haut de la page MyAnimeList"><i class="fa-solid fa-arrow-left"
+                                aria-hidden="true"></i></button>
+                    </div>
+
+                    <p class="liste-pb"><strong>En parcourant la page, on constate :</strong></p>
+                    <ul>
+                        <li>Présence de la pub trop envahissante</li>
+                        <li>Bandeau de notification qui détourne l'attention de la navigation secondaire</li>
+                        <li>Barre de recherche difficile à repérer</li>
+                        <li>Typographie de petite taille (10 px à 16 px)</li>
+                        <li>Boutons « Add » peu visibles</li>
+                        <li>Manque de hiérarchie visuelle : le regard ne sait pas où se poser</li>
+                        <li>Page trop textuelle</li>
+                        <li>Des sections difficiles à distinguer</li>
+                        <li>Surcharge cognitive due à l'accumulation d'éléments sur la page</li>
+                    </ul>
+                </div>
+
+                <!-- Carte 2 : AniList -->
+                <div class="comparatif-carte">
+                    <h4>Page d'accueil d'AniList</h4>
+
+                    <div class="slider-box">
+                        <img id="img-anilist" src="photos_webp/accueil_anilist.webp"
+                            alt="Haut de la page d'accueil d'AniList">
+                        <button type="button" id="next-anilist" class="slider-btn btn-next"
+                            aria-label="Voir la suite de la page AniList"><i class="fa-solid fa-arrow-right"
+                                aria-hidden="true"></i></button>
+                        <button type="button" id="prev-anilist" class="slider-btn btn-prev"
+                            aria-label="Revenir au haut de la page AniList"><i class="fa-solid fa-arrow-left"
+                                aria-hidden="true"></i></button>
+                    </div>
+
+                    <p class="liste-good"><strong>Points positifs :</strong></p>
+                    <ul>
+                        <li>Une hero section dédiée à la présentation des fonctionnalités.</li>
+                        <li>Une mise en page aérée qui facilite la lecture.</li>
+                        <li>Hiérarchie typographique qui facilite le repérage des informations.</li>
+                        <li>Une barre de filtres pour faciliter la recherche.</li>
+                        <li>Une homogénéité de la taille des images pour garder une cohérence.</li>
+                        <li>Une limitation dans le nombre d'éléments visibles sur la page pour limiter la surcharge
+                            cognitive.</li>
+                    </ul>
+                </div>
+            </div>
+            <h4>Mes objectifs de refonte</h4>
+            <p>Bien que la richesse de contenus et de fonctionnalités en fasse sa force, la lisibilité ne doit pas
+                être sacrifiée pour autant. <br> Pour cette refonte, je me suis donc fixée 3 objectifs à prioriser :
+            </p>
+            <ol>
+                <li>Désencombrer la page d'accueil pour ne pas surcharger l'utilisateur</li>
+                <li>Hiérarchiser l'information pour plus de clarté et de lisibilité</li>
+                <li>Clarifier la navigation</li>
+            </ol>
+
+            <p>Avant de pouvoir envisager les améliorations, il est tout d'abord nécessaire de comprendre les besoins et
+                les attentes des utilisateurs.</p>
         </section>
 
-        <!-- Section 2 : Analyser le site et identifier les points de douleur-->
         <!-- Section 3 : Réaliser un persona et une Experience Map>-->
+        <section id="section3">
+            <h3>Réaliser un persona et une Experience Map</h3>
+        </section>
         <!-- Section 4 : Concevoir un parcours utilisateur / étape idéation-->
+        <section id="section4">
+            <h3>Concevoir un parcours utilisateur / étape idéation</h3>
+        </section>
         <!-- Section 5 : Concevoir la maquette-->
+        <section id="section5">
+            <h3>Concevoir la maquette</h3>
+        </section>
         <!-- Section 6 : Ce que j'ai appris-->
+        <section id="section6">
+            <h3>Ce que j'ai appris</h3>
+        </section>
     </main>
 
     <footer>
@@ -138,6 +290,7 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/59793cee80.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
 
 </body>
 

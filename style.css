@@ -649,6 +649,8 @@ a:focus {
   top: 0;
 }
 
+/* PAGES PROJET*/
+
 .cards {
   display: flex;
   justify-content: center;
@@ -669,6 +671,22 @@ a:focus {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.333);
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+}
+
+a.card,
+a.card:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+a.card .heading {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+a.card .content {
+  color: #d4d4d8;
+  text-decoration: none;
 }
 
 .icon,
@@ -744,4 +762,239 @@ a:focus {
 
 main.case-study {
   margin: 25px 50px;
+}
+
+/* Titres principaux */
+.case-study h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 0.6rem;
+}
+
+.case-study>h2 {
+  font-size: 1.35rem;
+  font-weight: 400;
+  color: #d4d4d8;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.case-study ul,
+ol {
+  list-style-position: inside;
+}
+
+/* Graphique comparatif SEO en colonnes verticales */
+.seo-chart {
+  --max: 13400000;
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 28px 24px;
+  margin: 30px 0;
+}
+
+.chart-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #ffffff;
+  text-align: center;
+  margin-bottom: 28px;
+}
+
+.chart-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  align-items: end;
+  padding: 0 10px;
+}
+
+.chart-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.chart-bar-area {
+  width: 100%;
+  height: 220px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.chart-bar {
+  width: 100%;
+  max-width: 110px;
+  height: calc((var(--val) / var(--max)) * 100%);
+  min-height: 6px;
+  background-color: #52525b;
+  border-radius: 10px 10px 0 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+  transition: height 0.6s ease;
+}
+
+.bar-mal {
+  --val: 13400000;
+  background-color: #ffbf00;
+}
+
+.bar-animeplanet {
+  --val: 1500000;
+}
+
+.bar-anilist {
+  --val: 455700;
+}
+
+.bar-mangaupdates {
+  --val: 391300;
+}
+
+/* Chiffre à l'intérieur pour la grande barre jaune */
+.chart-value {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #000000;
+}
+
+/* Chiffre au-dessus pour les petites barres */
+.chart-value-top {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e4e4e7;
+  margin-bottom: 6px;
+}
+
+.chart-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #e4e4e7;
+  text-align: center;
+}
+
+.chart-source {
+  font-size: 0.8rem;
+  color: #a1a1aa;
+  margin-top: 24px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.chart-source a {
+  color: #ffbf00;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* Adaptation mobile pour éviter que les labels ne se touchent */
+@media screen and (max-width: 520px) {
+  .chart-columns {
+    gap: 8px;
+    padding: 0;
+  }
+
+  .chart-label,
+  .chart-value,
+  .chart-value-top {
+    font-size: 0.75rem;
+  }
+}
+
+.comparatif {
+  display: flex;
+  gap: 24px;
+  margin: 32px 0;
+}
+
+.comparatif-carte {
+  flex: 1;
+  min-width: 0;
+  background-color: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.comparatif-carte img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  margin: 16px 0;
+  display: block;
+}
+
+.comparatif-carte ul {
+  padding-left: 18px;
+  color: #d4d4d8;
+  line-height: 1.6;
+}
+
+.comparatif-carte li {
+  margin-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .comparatif {
+    flex-direction: column;
+  }
+}
+
+.slider-box {
+  position: relative;
+  margin: 16px 0;
+}
+
+.slider-box img {
+  margin: 0;
+}
+
+.slider-btn {
+  position: absolute;
+  bottom: 12px;
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  background-color: #ffbf00;
+  color: #000000;
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.2s ease;
+}
+
+.slider-btn:hover {
+  transform: scale(1.08);
+}
+
+.slider-btn:focus-visible {
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
+/* Flèche de droite visible par défaut */
+.btn-next {
+  right: 12px;
+}
+
+/* Flèche de gauche cachée par défaut */
+.btn-prev {
+  left: 12px;
+  display: none;
 }
