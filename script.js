@@ -1,3 +1,15 @@
+// Pour ne pas afficher le bouton retour au haut de la page lorsque l'on est déjà en haut de la page
+let backToTop = document.getElementById("backToTop");
+
+window.addEventListener('scroll', function () {
+    if (window.scrollY > 300) {
+        backToTop.style.display = 'flex';
+    } else {
+        backToTop.style.display = 'none';
+    }
+});
+
+// Flèches de navigation des captures d'écranpour l'étude de cas
 // MyAnimeList
 let imgMal = document.getElementById("img-mal");
 let nextMal = document.getElementById("next-mal");
