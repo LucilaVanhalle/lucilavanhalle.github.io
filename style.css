@@ -196,6 +196,8 @@ footer h2 {
 /* SECTION : À PROPOS */
 
 .a-propos-contenu {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 30px;
 }
