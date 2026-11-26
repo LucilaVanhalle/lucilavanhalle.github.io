@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
-
 html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
@@ -761,7 +759,7 @@ a.card .content {
 }
 
 main.case-study {
-  margin: 25px 50px;
+  margin: 25px 120px;
 }
 
 /* Titres principaux */
