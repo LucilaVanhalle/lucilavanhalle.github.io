@@ -1,7 +1,7 @@
 html {
   scroll-padding-top: 100px;
   scroll-behavior: smooth;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 * {
@@ -59,7 +59,7 @@ main {
 /*Zone de repos pour les yeux sans toucher à la largeur de la hero section*/
 main section:not(.hero-cinema) {
   padding: 40px 25px;
-  max-width: 1000px;
+  max-width: 1280px;
   margin: 0 auto;
 }
 
@@ -84,7 +84,7 @@ main section:not(.hero-cinema) {
 }
 
 .barre-de-navigation a {
-  font-size: 0.95em;
+  font-size: 1em;
   font-weight: 500;
   text-decoration: none;
   color: #fff;
@@ -176,10 +176,6 @@ main section:not(.hero-cinema) {
   object-position: center 45%;
 }
 
-main section {
-  padding: 40px 15px;
-}
-
 main section h2 {
   font-family: "Commissioner", sans-serif;
   font-size: 2.5em;
@@ -211,6 +207,7 @@ footer h2 {
 
 .a-propos-bio {
   text-align: center;
+  margin: 0 auto;
 }
 
 .a-propos-bio p {
@@ -295,7 +292,7 @@ footer h2 {
 }
 
 .timeline-item p {
-  font-size: 0.95em;
+  font-size: 1em;
   color: #ccc;
 }
 
@@ -304,7 +301,7 @@ footer h2 {
 .projets-ux-container {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 30px;
+  gap: 25px;
 }
 
 .carte-projet {
@@ -318,34 +315,17 @@ footer h2 {
 
 .carte-projet h3 {
   font-family: "Commissioner", sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   color: #ffbf00;
   margin-bottom: 15px;
 }
 
 .carte-projet p {
-  font-size: 0.95em;
+  font-size: 1em;
   color: #ccc;
-  line-height: 1.6;
+  line-height: 1.5;
   flex-grow: 1;
-}
-
-.tags-competences {
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin: 20px 0;
-}
-
-.tags-competences li {
-  font-size: 0.8em;
-  background-color: rgba(255, 191, 0, 0.1);
-  color: #ffbf00;
-  padding: 5px 10px;
-  border-radius: 20px;
-  font-family: "Commissioner", sans-serif;
-  font-weight: 600;
+  margin-bottom: 15px;
 }
 
 .carte-liens {
@@ -377,14 +357,14 @@ footer h2 {
 
 .projet-film h3 {
   font-family: "Commissioner", sans-serif;
-  font-size: 2em;
+  font-size: 1.6em;
   margin-bottom: 15px;
   color: #fff;
 }
 
 .projet-film img {
   width: 100%;
-  max-width: 400px;
+  max-width: 280px;
   height: auto;
   border-radius: 5px;
   margin-bottom: 15px;
@@ -418,7 +398,7 @@ footer h2 {
 }
 
 .projet-film p {
-  font-size: 0.95em;
+  font-size: 1em;
   color: #ccc;
   text-align: left;
   line-height: 1.5;
@@ -439,14 +419,14 @@ footer h2 {
   flex-direction: column;
   gap: 5px;
   margin-top: 15px;
-  font-size: 0.85em;
+  font-size: 1em;
   color: #ccc;
 }
 
 .film-details li {
   font-family: "Commissioner", sans-serif;
   font-weight: 600;
-  font-size: 0.95em;
+  font-size: 1em;
 }
 
 /* SECTION : PHOTOS */
@@ -473,7 +453,8 @@ footer h2 {
 .gallery-grid-duo {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 15px;
+  gap: 30px;
+  align-items: center;
 }
 
 .grid-item img {
@@ -481,6 +462,21 @@ footer h2 {
   object-fit: contain;
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.gallery-grid-duo .item-1 img {
+  max-width: 450px;
+  margin: 0 auto;
+  display: block;
+}
+
+.gallery-grid-duo img {
+  max-height: 520px;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+  margin: 0 auto;
+  display: block;
 }
 
 /* SECTION : CONTACT */
@@ -588,12 +584,6 @@ footer h2 {
     text-align: left;
   }
 
-  .a-propos-bio p {
-    max-width: 75ch;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
   .projets-film-container {
     grid-template-columns: 1fr 1fr 1fr;
     gap: 20px;
@@ -636,6 +626,7 @@ footer h2 {
 }
 
 .back-to-top {
+  display: none;
   position: fixed;
   bottom: 25px;
   right: 25px;
@@ -644,7 +635,6 @@ footer h2 {
   background: #ffbf00;
   color: #000;
   border-radius: 50%;
-  display: flex;
   align-items: center;
   justify-content: center;
   font-size: 1.4rem;
@@ -831,7 +821,7 @@ ol {
 }
 
 .chart-title {
-  font-size: 0.95rem;
+  font-size: 1em;
   font-weight: 600;
   color: #ffffff;
   text-align: center;
@@ -895,28 +885,28 @@ ol {
 
 /* Chiffre à l'intérieur pour la grande barre jaune */
 .chart-value {
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: 700;
   color: #000000;
 }
 
 /* Chiffre au-dessus pour les petites barres */
 .chart-value-top {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #e4e4e7;
   margin-bottom: 6px;
 }
 
 .chart-label {
-  font-size: 0.85rem;
+  font-size: 1rem;
   font-weight: 600;
   color: #e4e4e7;
   text-align: center;
 }
 
 .chart-source {
-  font-size: 0.8rem;
+  font-size: 1rem;
   color: #a1a1aa;
   margin-top: 24px;
   margin-bottom: 0;
@@ -939,7 +929,7 @@ ol {
   .chart-label,
   .chart-value,
   .chart-value-top {
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }
 
@@ -1031,4 +1021,11 @@ ol {
 .btn-prev {
   left: 12px;
   display: none;
+}
+
+@media screen and (min-width: 900px) {
+  .projets-ux-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
